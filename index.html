@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Appreciation</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header id="main-header">
+       <h1>Nature Appreciation</h1>
+   </header>
+   
+   <main id="main-content"> 
+       <section class="content-section" id="about">
+           <h2 class="content-title">About Nature</h2>
+           <p class="content-text">Nature is beautiful and worth protecting. Here are some ways to enjoy it.</p>
+       </section>
+
+       <section class="content-section" id="sound">
+           <h2 class="content-title">Nature Sounds</h2>
+           <audio controls class="media-player">
+               <source src="./media/1-Minute Nature Background Sound.mp3" type="audio/mpeg">
+               Your browser does not support the audio .
+           </audio>
+       </section>
+
+       <section class="content-section" id="video">
+           <h2 class="content-title">Nature Video</h2>
+           <video controls class="media-player" poster="./media/poster.jpg">
+               <source src="./media/NATURE CINEMATIC Video.mp4" type="video/mp4">
+               Your browser does not support the video.
+           </video>
+       </section>
+
+       <section class="content-section" id="learn-more">
+           <h2 class="content-title">Learn More</h2>
+           <iframe src="https://www.nationalgeographic.com/environment/" 
+                   title="National Geographic Environment" 
+                   class="embedded-content"></iframe>
+       </section>
+
+       <section class="content-section" id="contact">
+           <h2 class="content-title">Contact Us</h2>
+           <form id="contact-form" action="test.php" method="post">
+               <div class="form-group">
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required>
+               </div>   
+               <div class="form-group">
+                   <label for="message">Message:</label>
+                   <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+               </div>
+               <input type="submit" class="submit-btn">
+           </form>
+       </section>
+   </main>
+   
+   <footer id="main-footer">
+       <p>Contact us by email:</p> 
+       <a href="mailto:natureappreciation@gmail.com">natureappreciation@gmail.com</a>
+       <p>&copy; 2024 Nature Appreciation</p>
+   </footer>
+</body>
+</html>
